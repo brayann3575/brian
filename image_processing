@@ -1,0 +1,14 @@
+import sys
+
+def process_image(search_query):
+    # Here you can write your Python code for image processing based on the search query
+    # For simplicity, let's just return a sample result
+    return f"Image processing for '{search_query}' completed."
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python image_processing.py [search_query]")
+        sys.exit(1)
+    search_query = sys.argv[1]
+    result = process_image(search_query)
+    print(result)
